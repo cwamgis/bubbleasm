@@ -33,5 +33,4 @@ Les variables AL,BL et DL permettent d'effectuer les opérations arithmétiques 
 
 La pile n'a pas été utilisée dans ce cas, mais c'est un outil utile dans ce contexte assembleur ou peu de variables sont exploitables.
 
-# Remarques
-variables asm
+
