@@ -1,10 +1,10 @@
 # bubbleasm
 Implémentation du tri à bulle sur Microprocessor Simulator for Students
 
-# Présentation
+## Présentation
 Cet exercice permet d'aborder la programmation en assembleur en implémentant un algortihme connu de tri sur un tableau d'entiers de huit éléments : 5 1 4 2 8 9 3 7
 
-# Algorithme
+## Algorithme
 Le principe du tri à bulles est de parcourir le tableau plusieurs fois en échangeant les éléments deux à deux lorsque le premier n'est pas inférieur au second.
 On ne recommence par de parcours lorsque le dernier n'a pas engendré de commutation.
 De plus, étant donné qu'à la fin de chaque parcours, le dernier élément est forcément à sa place, le parcours suivant s'arrêtera un élément avant.
@@ -24,7 +24,7 @@ Au pire des cas, (ç'est à dire si le tableau est classé en ordre décroissant
 
 
 
-# Implémentation
+## Implémentation
 Pour implémenter cela avec le simulateur, le tableau, ainsi que le drapeau de commutation et l'indice maximum de parcours (n-x) sont stockés dans le registre.
 Les indices dans le registre sont choisis de manière suffisamment grande pour les instructions ne viennent recopier les données.
 Les blocs de code associés à des commandes jumps conditionnels permettent d'effectuer les comparaisons et d'exécuter les instructions correspondant à chaque cas.
