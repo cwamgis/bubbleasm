@@ -8,7 +8,7 @@ Cet exercice permet d'aborder la programmation en assembleur en implémentant un
 Le principe du tri à bulles est de parcourir le tableau plusieurs fois en échangeant les éléments deux à deux lorsque le premier n'est pas inférieur au second.
 On ne recommence par de parcours lorsque le dernier n'a pas engendré de commutation.
 De plus, étant donné qu'à la fin de chaque parcours, le dernier élément est forcément à sa place, le parcours suivant s'arrêtera un élément avant.
-Au pire des cas, (ç'est à dire si le tableau est classé en ordre décroissant), la complexité de l'algorithme est n!.
+
 
 1. echangeEffectue = vrai;
 2. x=-1;
@@ -22,7 +22,8 @@ Au pire des cas, (ç'est à dire si le tableau est classé en ordre décroissant
 5. 			fin si
 6. fin pour
 
-
+##Complexité
+Au pire des cas, (ç'est à dire si le tableau est classé en ordre décroissant), la complexité de l'algorithme est de : n [premier tour] + (n-1) [deuxième tour] + (n-2) ... + 2 [dernier tour]  = sigma (de i=2 à n) = [n*(n+1)/2]-1
 
 ## Implémentation
 Pour implémenter cela avec le simulateur, le tableau, ainsi que le drapeau de commutation et l'indice maximum de parcours (n-x) sont stockés dans le registre.
